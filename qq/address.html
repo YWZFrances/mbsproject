@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>新增收货地址</title>
+		<link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_p157st1taamoyldi.css"/>
+		<style type="text/css">
+		*{
+		    margin:0;
+		    padding:0;
+		}
+		html{
+		    width:100%;
+		    height:100%;
+		}
+		body{
+		    width:100%;
+		    height:100%;
+		    font-size:62.5%;
+		}
+			.address{
+				width:100%;
+				height:100%;
+			}
+			.address-footer{
+				width:100%;
+				height:10%;
+				background:red;
+				position: fixed;
+				bottom:0;
+			}
+			.address-footer .address-footer-p{
+				color:#fff;
+				text-align: center;
+				font-size:1.5rem;
+				margin-top:5%;
+			} 
+			.address-header{
+				width:100%;
+				height:10%;
+			}
+			.address-header .address-header-left{
+				width:20%;
+				height:100%;
+				float:left;
+				font-size:3rem;
+				line-height: 100%;
+				text-align: center;
+			}
+			.address-header .address-header-right{
+				width:80%;
+				height:100%;
+				float:left;
+				
+			}
+			.address-header .address-header-right .address-header-right-p{
+				color:#000;
+				font-size: 1.6rem;
+				text-align: center;
+				margin-top:5%;
+			}
+			.address-section{
+				width:100%;
+				height:80%;
+			}
+			.address-section .address-section-consignee{
+				width:100%;
+				height:8%;
+				border-top:1px solid #ccc;
+				border-bottom:1px solid #ccc;
+				
+			}
+			.address-section .address-section-consignee .address-section-consignee1{
+				width:30%;
+				height:100%;
+				float:left;
+				
+			}
+			.address-section .address-section-consignee .address-section-consignee2{
+				width:70%;
+				height:100%;
+				float:left;
+				
+			}
+			.address-section .address-section-consignee .address-section-consignee1 .address-section-p1{
+				font-size:1rem;
+				text-align: center;
+				margin-top:10%;
+			}
+			.address-section .address-section-consignee .address-section-consignee2 .txt{
+				width:100%;
+				border:none;
+				height:100%;
+				float:left;
+				
+			}
+			.address-section .address-section-home{
+				width:100%;
+				height:24.5%;
+				border-bottom:1px solid #ccc;
+			}
+			.address-section .address-section-home .address-section-home1{
+				width:100%;
+				height:30%;
+			}
+			.address-section .address-section-home .address-section-home1 .address-section-p1{
+				font-size:1rem;
+				margin-left:5%;
+				padding-top:2.5%;
+			}
+			.address-section .address-section-home .address-section-home2{
+				width:100%;
+				height:70%;
+			}
+			.address-section .address-section-home .address-section-home2 .sheng{
+				    width: 41%;
+				    height: 44%;
+				    float: left;
+				    margin-left: 5%;
+			}
+			.address-section .address-section-home .address-section-home2 .sheng1{
+				width:87%;
+				height:44%;
+				margin-top:2%;
+				margin-left:5%;
+			}
+			.address-section .address-section-Detailed{
+				width:100%;
+				height:15%;
+				border-bottom:1px solid #ccc;
+			}
+			.address-section .address-section-Detailed .address-section-Detailed1{
+				width:100%;
+				height:50%;
+				
+				/*border-top:1px solid #ccc;*/
+			}
+			.address-section .address-section-Detailed .address-section-Detailed1 .address-section-p1{
+				font-size:1rem;
+				margin-left:5%;
+				padding-top:2.5%;
+			}
+			.address-section .address-section-Detailed .address-section-Detailed1 .txt1{
+				margin-left:5%;
+				width:80%;
+				height:90%;
+				border:none;
+			
+			}
+		</style>
+	</head>
+	<body>
+		<script src="dist/js/jquery-3.1.1.js"></script>
+		<script src="dist/js/jquery.cxselect.js"></script>
+		<div class="address">
+			<header class="address-header">
+				<div class="address-header-left iconfont icon-fanhui"></div>
+				<div class="address-header-right">
+					<p class="address-header-right-p">
+						新增收货地址
+					</p>
+				</div>
+			</header>
+			<section class="address-section">
+				<div class="address-section-consignee">
+					<div class="address-section-consignee1">
+						<p class="address-section-p1">
+							收货人:
+						</p>
+					</div>
+					<div class="address-section-consignee2">
+						<input type="text" name="" class="txt" value="" placeholder="请填写收货人的真实姓名"/>
+					</div>
+				</div>
+				<div class="address-section-home">
+					<div class="address-section-home1">
+						<p class="address-section-p1">
+							所在地区:
+						</p>
+					</div>
+					<div class="address-section-home2 ">
+						 <select id="s_province" name="s_province" class="sheng"></select>  
+
+					    <select id="s_city" name="s_city" class="sheng"></select>  
+					
+					    <select id="s_county" name="s_county" class="sheng1"></select>
+					
+					    <script class="resources library" src="dist/js/area.js" type="text/javascript"></script>
+					
+					    
+					
+					    <script type="text/javascript">_init_area();</script>
+					</div>
+				</div>
+				<div class="address-section-Detailed">
+					<div class="address-section-Detailed1">
+						<p class="address-section-p1">
+							详细地址:
+						</p>
+					</div>
+					<div class="address-section-Detailed1">
+						<input type="text" placeholder="请填入详细地址" name="" id="" value="" class="txt1"/>
+					</div>
+				</div>
+				<div class="address-section-Detailed">
+					<div class="address-section-Detailed1">
+						<p class="address-section-p1">
+							详细地址:
+						</p>
+					</div>
+					<div class="address-section-Detailed1">
+						<input type="text" placeholder="请填入详细地址" name="" id="" value="" class="txt1"/>
+					</div>
+				</div>
+				<div class="address-section-Detailed">
+					<div class="address-section-Detailed1">
+						<p class="address-section-p1">
+							详细地址:
+						</p>
+					</div>
+					<div class="address-section-Detailed1">
+						<input type="text" placeholder="请填入详细地址" name="" id="" value="" class="txt1"/>
+					</div>
+				</div>
+				<div class="address-section-consignee">
+					<div class="address-section-consignee1">
+						<p class="address-section-p1" style="font-size:0.5rem;margin-left:5%;">
+							设置成默认地址
+						</p>
+					</div>
+					<!--<div class="address-section-consignee2">
+						<input type="text" name="" class="txt" value="" placeholder="请填写收货人的真实姓名"/>
+					</div>-->
+				</div>
+			</section>
+			
+			<footer class="address-footer">
+				<p class="address-footer-p">
+					保存
+				</p>
+				
+			</footer>
+		
+		</div>
+		<script type="text/javascript">
+
+			var Gid  = document.getElementById ;
+			
+			var showArea = function(){
+			
+				Gid('show').innerHTML = "<h3>省" + Gid('s_province').value + " - 市" + 	
+			
+				Gid('s_city').value + " - 县/区" + 
+			
+				Gid('s_county').value + "</h3>"
+			
+										}
+			
+			Gid('s_county').setAttribute('onchange','showArea()');
+		
+		</script>
+	</body>
+</html>
