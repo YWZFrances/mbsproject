@@ -1,0 +1,1 @@
+$(function(){$(".list").click(function(){$(this).addClass("border").siblings(".list").removeClass("border")});new Swiper(".swiper-container",{loop:!0,pagination:".swiper-pagination",autoplay:1e3});$(".bottom .list-wrap .list1").click(function(){console.log(111),$(this).addClass("red").siblings().removeClass("red")})});

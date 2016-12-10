@@ -1,0 +1,490 @@
+img {
+  border: 0;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+}
+.clearfix:after {
+  content: "";
+  width: 100%;
+  clear: both;
+  display: block;
+}
+header {
+  width: 100%;
+  height: 94px;
+}
+.wrap {
+  width: 100%;
+}
+.con-wrap {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background: #fff;
+}
+.con {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  z-index: 99;
+  opacity: 0.7;
+  padding: 5px 0 0 0;
+  margin: 0 0 5px 0;
+  border: 1px solid #eee;
+}
+.scan {
+  width: 16%;
+  padding: 5px 5px 5px 5px;
+  float: left;
+}
+.scan1 {
+  width: 16%;
+  padding: 5px 5px 5px 5px;
+  float: right;
+}
+.scan .fa {
+  display: block;
+  text-align: center;
+  font-size: 2rem;
+  margin: 0 0 0 9px;
+}
+.ff {
+  display: block;
+  text-align: center;
+  font-size: 2rem;
+  margin: 0 0 0 25px;
+}
+.scan p {
+  font-size: 0.8rem;
+  text-align: center;
+  color: #000;
+  font-weight: 500;
+}
+.scan1 p {
+  font-size: 0.8rem;
+  text-align: center;
+  color: #000;
+  font-weight: 500;
+}
+form {
+  width: 180px;
+  height: 50px;
+  display: block;
+  float: left;
+  position: relative;
+}
+.txt {
+  height: 30px;
+}
+.ii {
+  position: absolute;
+  top: 10px;
+  left: 8px;
+}
+.iii {
+  position: absolute;
+  top: 10px;
+  left: 150px;
+}
+.ul-wrap {
+  width: 100%;
+  height: 40px;
+  margin-top: 40px;
+}
+.ul-wrap .ul {
+  width: 100%;
+  height: 40px;
+}
+.ul-wrap .ul .list {
+  list-style: none;
+  width: 15%;
+  height: 40px;
+  padding: 11px 3px 0 2px;
+  text-align: center;
+  line-height: 40px;
+  float: left;
+}
+.ul-wrap .ul .list .aa {
+  color: #000;
+  text-decoration: none;
+  font-family: "微软雅黑";
+}
+.border {
+  border-bottom: 2px solid red;
+  color: red;
+}
+section {
+  width: 100%;
+  height: 1400px;
+}
+.main-wrap {
+  width: 100%;
+  height: 530px;
+  z-index: 0;
+}
+.main-wrap .main {
+  width: 100%;
+}
+.main-wrap .main .swiper-container {
+  width: 100%;
+  height: 180px;
+}
+.main-wrap .pic {
+  width: 100%;
+  height: 120px;
+}
+.main-wrap .pic .img-1 {
+  width: 100%;
+  height: 120px;
+}
+.img-0 {
+  width: 100%;
+  height: 180px;
+}
+.main-pic {
+  width: 100%;
+  height: 180px;
+}
+.main-pic .main-pic-ul {
+  width: 100%;
+  height: 180px;
+}
+.main-pic .main-pic-ul .ll {
+  width: 25%;
+  list-style: none;
+  float: left;
+  text-align: center;
+  padding-top: 12px;
+}
+.main-pic .main-pic-ul .ll .iconfont {
+  font-size: 3.5rem;
+}
+.main-pic .main-pic-ul .ll .quan {
+  font-family: "微软雅黑";
+}
+.yellow {
+  color: #feb71d;
+}
+.yellow1 {
+  color: #ff9e00;
+}
+.pink {
+  color: #ff4785;
+}
+.pink1 {
+  color: #fc6262;
+}
+.red {
+  color: red;
+}
+.green {
+  color: #1cd5cf;
+}
+.blue {
+  color: #279efa;
+}
+.purple {
+  color: #983fd7;
+}
+.Notice {
+  width: 100%;
+  height: 50px;
+}
+.Notice .left {
+  width: 30%;
+  height: 50px;
+  float: left;
+}
+.Notice .left .mb {
+  width: 100%;
+  height: 50px;
+}
+.Notice .left .mb span {
+  width: 50%;
+  height: 50px;
+  font-size: 1.3rem;
+  font-weight: 600;
+  float: left;
+  display: block;
+  text-align: center;
+  line-height: 25px;
+}
+.Notice .left .mb b {
+  font-size: 1.3rem;
+  width: 50%;
+  height: 50%;
+  background: #9234d0;
+  color: #fff;
+  float: left;
+  display: block;
+  text-align: center;
+  line-height: 25px;
+  border-radius: 5px;
+  font-style: italic;
+}
+.Notice .right {
+  width: 60%;
+  height: 50px;
+  float: left;
+  position: relative;
+  overflow: hidden;
+}
+.Notice .right .noc {
+  list-style: none;
+  width: 100%;
+  height: 50px;
+}
+.Notice .right .noc .lb {
+  width: 100%;
+  height: 50px;
+  font-size: 1.4rem;
+  font-family: "微软雅黑";
+  line-height: 20px;
+  float: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.Notice .right .noc .lb span {
+  display: block;
+  color: red;
+  font-weight: 600;
+  padding: 3px 3px;
+  float: left;
+}
+.right-ul {
+  position: absolute;
+}
+.content {
+  width: 100%;
+  height: 720px;
+  background: url("../img/con08.gif") repeat;
+}
+.content .con-top {
+  width: 100%;
+  height: 750px;
+}
+.content .con-top .con-header {
+  width: 100%;
+  height: 280px;
+  background: url("../img/con01.gif") repeat;
+}
+.content .con-top .con-header .font {
+  width: 100%;
+  margin: 0 auto;
+  height: 60px;
+}
+.content .con-top .con-header .font span {
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  margin-left: 170px;
+  color: #fff;
+  font-size: 0.5rem;
+  font-weight: 600;
+}
+.content .con-top .con-header .font h1 {
+  height: 40px;
+  line-height: 0px;
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-left: 40px;
+  color: #fff;
+  font-style: italic;
+}
+.content .con-top .con-header .font-bottom {
+  width: 100%;
+  height: 240px;
+}
+.content .con-top .con-header .font-bottom .img-2 {
+  width: 50%;
+  height: 120px;
+  float: left;
+}
+.content .con-top .con-pic {
+  width: 100%;
+  height: 180px;
+  background: url("../img/con01.gif") repeat;
+}
+.content .con-top .con-pic h2 {
+  width: 100%;
+  height: 40px;
+  line-height: 35px;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-left: 35px;
+  font-style: italic;
+  color: #fff;
+}
+.content .con-top .con-pic .con-pic-bottom {
+  width: 100%;
+  height: 120px;
+  margin-top: 30px;
+}
+.content .con-top .con-sort {
+  width: 100%;
+  height: 240px;
+}
+.content .con-top .con-sort .rx {
+  width: 100%;
+  height: 60px;
+  line-height: 80px;
+  font-size: 2rem;
+  font-weight: 900;
+  text-align: center;
+  color: #000;
+  margin: 0 auto;
+}
+.content .con-top .con-sort .rx-pic {
+  width: 100%;
+  height: 180px;
+}
+.content .con-top .con-sort .rx-pic .rx-pic-wrap {
+  width: 24%;
+  height: 90px;
+  margin: 0 0 3px 3px;
+  float: left;
+  background: #fff;
+}
+.content .con-top .con-sort .rx-pic .rx-pic-wrap .img-4 {
+  width: 100%;
+  height: 55px;
+  margin-top: 0;
+}
+.content .con-top .con-sort .rx-pic .rx-pic-wrap .pic-title {
+  width: 80%;
+  padding: 3px 5px 5px 5px;
+  border-radius: 10px;
+  background: #f65d02;
+  color: #fff;
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 5px 2px 5px 2px;
+}
+.con-pic-bottom .img-33 {
+  width: 48%;
+  height: 120px;
+  margin-left: 3px;
+}
+.con-pic-bottom .img-34 {
+  width: 48%;
+  height: 120px;
+  margin-right: 3px;
+}
+.topics {
+  width: 100%;
+  height: 160px;
+}
+.topics .topics-top {
+  width: 100%;
+  height: 160px;
+}
+.topics .topics-top .brand {
+  width: 100%;
+  height: 120px;
+  background: #eee;
+}
+.topics .topics-top .brand .top-title {
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+}
+.topics .topics-top .brand .top-title .hh {
+  width: 16%;
+  height: 40px;
+  font-size: 1rem;
+  color: #000;
+  margin-left: 35%;
+  line-height: 40px;
+  float: left;
+}
+.topics .topics-top .brand .top-title .sp {
+  width: 15%;
+  height: 40px;
+  display: block;
+  font-size: 1rem;
+  color: #000;
+  margin-right: 30%;
+  float: left;
+  font-weight: 600;
+}
+.topics .topics-top .brand .brand-pic-wrap {
+  width: 100%;
+  height: 80px;
+}
+.topics .topics-top .brand .brand-pic-wrap .brand-pic {
+  width: 100%;
+  height: 80px;
+}
+.topics .topics-top .brand .brand-pic-wrap .brand-pic .pic-modal {
+  width: 33%;
+  height: 80px;
+  float: left;
+  position: relative;
+}
+.topics .topics-top .brand .brand-pic-wrap .brand-pic .pic-modal img {
+  width: 100%;
+  height: 80px;
+  float: left;
+}
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+.img-5 {
+  width: 30%;
+  height: 80px;
+}
+.pic-modal {
+  width: 100%;
+}
+footer {
+  width: 100%;
+  height: 50px;
+}
+footer .bottom {
+  width: 100%;
+  height: 50px;
+  background: #fff;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 2000;
+}
+footer .bottom .list-wrap {
+  width: 100%;
+  height: 50px;
+}
+footer .bottom .list-wrap .list1 {
+  width: 19%;
+  height: 50px;
+  float: left;
+  padding: 5px 8px 2px 8px;
+  text-align: center;
+  list-style: none;
+}
+footer .bottom .list-wrap .list1 .iconfont {
+  font-size: 2rem;
+  padding: .5rem 0;
+}
+footer .bottom .list-wrap .list1 .pi {
+  font-size: 1.1rem;
+  padding: .5rem 0;
+}
+footer .fi {
+  width: 100%;
+  height: 50px;
+}
+.red {
+  color: red;
+}
