@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>商品详情</title>
+		<script src="dist/js/touch.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_td0weredympwrk9.css"/>
+		<link rel="stylesheet" type="text/css" href="dist/css/xiangqing.css"/>
+		<script src="dist/js/zepto.js"></script>
+		<script src="dist/js/template.js"></script>
+	</head>
+	<body>
+		<header>
+			<a href="list.html" class="iconfont icon-fanhui zuo"></a>
+			<a class="iconfont icon-gengduo you"></a>
+			<a class="iconfont icon-shijian sj"></a>
+		</header>
+		<section>
+			<div class="yifuming" id="yifuming">
+			</div>
+			<script id="goodtpl" type="text/html">
+	            <div class="wrap">
+	                {{each list as value i}}
+	                    <ul class="productlist">
+	                    	<li><img class="yifu" src="{{value['good_url']}}"/></li>
+							<li><span>自营</span></li>
+							<li><p>{{value['good_name']}}</p></li>
+							<li><span class="iconfont icon-gengduo"></span><p>分享</p></li>
+							<li><img src="dist/img/sjzx.png" alt="" /></li>
+							<li class="jiage">{{value['good_price']}}<span class="dazhe">{{value['good_price-d']}}</span></li>
+	                    </ul>
+	                {{/each}}
+	            </div>
+	        </script>
+			<div class="kuanshi">
+				选择尺码 颜色 数量
+			</div>
+		</section>
+		<footer>
+			<ul class="footerul">
+				<li>
+					<span class="iconfont icon-dianpu"></span>
+					<p>店铺</p>
+				</li>
+				<li>
+					<span class="iconfont icon-xingxing"></span>
+					<p>收藏</p>
+				</li>
+				<li>
+					<a href="shopCart.html" style="color:#000;">
+						<span class="iconfont icon-gouwuchefanbai"></span>
+						<p>购物车</p>
+					</a>
+
+				</li>
+				<li class="shop">
+					<span class="icofont"><p>加入购物车</p></span>
+
+				</li>
+				<li class="shop">
+					<span class="icofont"></span>
+					<p>立即购买</p>
+				</li>
+			</ul>
+		</footer>
+		<script src="dist/js/xiangqing.js"></script>
+	</body>
+</html>

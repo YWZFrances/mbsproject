@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>列表</title>
+    <link rel="stylesheet" type="text/css" href="dist/css/list.css">
+    <link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_aiegqvehh9gm0a4i.css">
+    <script src="dist/js/template.js"></script>
+    <script src="dist/js/zepto.js"></script>
+</head>
+<body>
+    <header>
+        <a href="classify.html" style="text-decoration: none;color:#000;"><div class="fh iconfont icon-fanhui"></div></a>
+        <input type="text" class="search" value="棉服/羽绒" >
+        <div class="be iconfont icon-sousuolansousuo"></div>
+        <div class="af iconfont icon-huatong"></div>
+        <div class="pl iconfont icon-pailiefangshi01"></div>
+    </header>
+    <section>
+        <div class="title clearfix">
+            <ul>
+                <li><a href="##">综合</a></li>
+                <li><a href="##">新品</a></li>
+                <li><a href="##">销量</a></li>
+                <li class="sx"><a href="##">价格<i class="iconfont icon-shangxiasanjiaoxing2"></i></a></li>
+                <li><a href="##">筛选</a></li>
+            </ul>
+        </div>
+        <div id="content"></div>
+        <script id="goodtpl" type="text/html">
+            <div class="wrap">
+                {{each list as value i}}
+                    <ul class="productlist">
+                        <li><a href="xiangqing.html?{{value['good_id']}}"><img src="{{value['good_url']}}"></a></li>
+                        <li><span class="name">{{value['good_name']}}</span></li>
+                        <li><span class="price" style="color:red">{{value['good_price']}}</span>
+                        月销量：<span class="count" style="color:#777">{{value['good_count']}}</span></li>
+                    </ul>
+                {{/each}}
+            </div>
+        </script>
+    </section>
+    <script src="dist/js/list.js"></script>
+</body>
+</html>

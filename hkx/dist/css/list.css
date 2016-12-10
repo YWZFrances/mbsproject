@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style-type: none;
+}
+html {
+  font-size: 62.5%;
+}
+.clearfix:after {
+  content: '';
+  width: 100%;
+  clear: both;
+  display: block;
+}
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 9999;
+  background: #fff;
+}
+footer li {
+  display: inline-block;
+  width: 25%;
+  text-align: center;
+  padding: 15px 0;
+  box-sizing: border-box;
+  float: left;
+}
+footer li a {
+  color: #000;
+  text-decoration: none;
+}
+footer .fa {
+  font-size: 2rem;
+}
+footer li i {
+  margin-bottom: 9px;
+}
+footer .color {
+  color: red;
+}
+footer .hide {
+  display: none;
+}
+header {
+  margin-top: 5px;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: flex;
+}
+header .iconfont {
+  font-size: 2rem;
+}
+header .search {
+  flex: 7;
+  display: block;
+  width: 80%;
+  height: 3rem;
+  border-radius: 3px;
+  text-indent: 50px;
+  border: 1px solid #ddd;
+}
+header .be {
+  position: absolute;
+  left: 70px;
+  top: 8px;
+}
+header .af {
+  position: absolute;
+  right: 73px;
+  top: 7px;
+}
+header .fh {
+  text-align: center;
+  flex: 1.5;
+  font-size: 3rem;
+}
+header .pl {
+  text-align: center;
+  font-size: 3rem;
+  flex: 1.5;
+}
+section {
+  margin-top: 50px;
+}
+section .title li {
+  float: left;
+  text-align: center;
+  padding: 5px 0;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  width: 20%;
+}
+section .title li a {
+  text-decoration: none;
+  color: #888;
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  font-size: 2rem;
+}
+section .title li a:hover {
+  border-bottom: 3px solid #000;
+  color: #000;
+  margin-bottom: -3px;
+}
+section #content .wrap {
+  background: #eee;
+}
+section #content ul {
+  width: 100%;
+  padding: 25px 0;
+  margin-right: 5px;
+}
+section #content ul img {
+  width: 100%;
+  text-align: center;
+}
+section #content ul li {
+  padding: 10px;
+  background: #fff;
+  width: 80%;
+  margin: 0 auto;
+}
+section #content ul li .name {
+  font-size: 2rem;
+  font-weight: bold;
+}
+section #content ul li .price {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-right: 5px;
+}

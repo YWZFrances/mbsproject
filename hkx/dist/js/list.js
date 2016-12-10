@@ -1,0 +1,1 @@
+$.get("/list.json",{},function(o){console.log(o);for(var t=0;t<o.length;t++){console.log(o);var e={list:o},n=template("goodtpl",e);document.getElementById("content").innerHTML=n}});

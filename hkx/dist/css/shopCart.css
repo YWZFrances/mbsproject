@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style-type: none;
+}
+html {
+  font-size: 62.5%;
+}
+.clearfix:after {
+  content: '';
+  width: 100%;
+  clear: both;
+  display: block;
+}
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 9999;
+  background: #fff;
+}
+footer li {
+  display: inline-block;
+  width: 25%;
+  text-align: center;
+  padding: 15px 0;
+  box-sizing: border-box;
+  float: left;
+}
+footer li a {
+  color: #000;
+  text-decoration: none;
+}
+footer .fa {
+  font-size: 2rem;
+}
+footer li i {
+  margin-bottom: 9px;
+}
+footer .color {
+  color: red;
+}
+footer .hide {
+  display: none;
+}
+header {
+  display: flex;
+  margin-top: 10px;
+  border-bottom: 1px solid #ddd;
+}
+header .iconfont {
+  flex: 1;
+  font-size: 4rem;
+  margin-bottom: 4px;
+}
+header h2 {
+  flex: 6;
+  font-size: 3rem;
+  margin-left: 95px;
+  margin-top: 4px;
+}
+section .color {
+  color: red;
+}
+section .title1 {
+  padding: 7px 0;
+  border-bottom: 1px solid #ddd;
+}
+section .title1 .iconfont {
+  font-size: 3rem;
+}
+section .title1 .all {
+  font-size: 2rem;
+  float: left;
+}
+section .title1 .bianji {
+  font-size: 2rem;
+  float: right;
+  margin-top: 7px;
+}
+section .title1 a {
+  text-decoration: none;
+  color: #000;
+}
+section .main {
+  margin-left: 40px;
+  margin-bottom: 120px;
+}
+section .main .ps {
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+section .main #content {
+  margin-top: 15px;
+}
+section .main #content ul {
+  margin-bottom: 30px;
+}
+section .main #content img {
+  display: block;
+  height: 143px;
+  width: 112px;
+}
+section .main #content .img {
+  display: inline-block;
+  width: 112px;
+  float: left;
+}
+section .main #content .ri {
+  display: inline-block;
+  margin-left: 20px;
+  float: left;
+}
+section .main #content .ri li {
+  margin-bottom: 15px;
+  width: 120px;
+}
+section .main #content .ri li span {
+  line-height: 20px;
+}
+section .main #content .ri li a {
+  display: inline-block;
+}
+section .jiesuan {
+  position: fixed;
+  left: 0;
+  bottom: 65px;
+  width: 100%;
+  background: #f4f4f4;
+  font-size: 1.5rem;
+}
+section .jiesuan button {
+  float: right;
+  display: inline-block;
+  border: none;
+  background: red;
+  padding: 15px 0;
+  color: #fff;
+  font-size: 1.5rem;
+}
+section .jiesuan .allset {
+  line-height: 40px;
+}
+section .jiesuan .allset .iconfont {
+  font-size: 2.5rem;
+  line-height: 45px;
+}
+section .jiesuan .total {
+  color: red;
+  margin-left: 10px;
+}

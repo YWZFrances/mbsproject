@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>支付宝</title>
+    <link rel="stylesheet" type="text/css" href="http://cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_bvma495zor9ysyvi.css">
+    <link rel="stylesheet" href="http://cdn.bootcss.com/Swiper/3.4.0/css/swiper.min.css">
+    <script src="http://cdn.bootcss.com/Swiper/3.4.0/js/swiper.js"></script>
+    <script src="touch.js"></script>
+    <script src="jquery-1.11.3.js"></script>
+    <style type="text/css">
+        *{margin: 0; padding:0;}
+        .clearfix:after{
+            content:'';
+            width: 100%;
+            clear:both;
+            display:block;
+        }
+        html{
+            font-size:62.5%;
+        }
+        body{
+            background:#f9f9f9;
+        }
+        header{
+            background-color:#3a3a3a;
+            color:#fff;
+        }
+        .header-top{
+            padding:15px;
+            display:flex;
+            font-size:2rem;
+        }
+        .header-top-left{
+            flex:1;
+        }
+        .header-top-left .fa{
+            margin-right:10px;
+            vertical-align:middle;
+            position:relative;
+            top:-2px;
+        }
+        .header-top-left span{
+            font-size:1.5rem;
+            vertical-align:middle;
+        }
+        .header-top-right{
+            flex:1;
+            text-align:right;
+        }
+        .header-top-right .fa{
+            margin-left:10px;
+        }
+        .header-btm{
+            display:flex;
+            text-align:center;
+            /* justify-content:space-around; */
+            justify-content:space-around;
+            /*中间空隙平分 */
+            padding:15px 5px;
+        }
+        .header-btm .fa{
+            font-size:4rem;
+        }
+        .header-btm p{
+            padding-top:8px;
+            font-size:1.2rem;
+        }
+        .body{
+            background-color:#fff;
+            width: 100%;
+        }
+        .body li{
+            display:inline-block;
+            width: 25%;
+            text-align: center;
+            border-bottom:1px solid #d0d0d0;
+            border-right:1px solid #d0d0d0;
+            padding:15px 0;
+            box-sizing:border-box;
+            float:left;
+        }
+        .body li:nth-child(4n){
+            border-right:none;
+        }
+        .body p{
+            color:#000;
+            font-size:1.2rem;
+            padding:8px;
+        }
+        .body .fa{
+            color:red;
+            font-size:2rem;
+        }
+        .swiper-container {
+            text-align:center;
+            height:154px;
+            border-top: 1px solid #d0d0d0;
+            border-bottom: 1px solid #d0d0d0;
+            margin-top:18px;
+            margin-bottom:18px;
+        }
+        .footer-c{
+            margin-bottom:80px;
+        }
+        .footer-c .body li{
+            border-top:1px solid #d0d0d0;
+        }
+        .footer-btm{
+            /* display:flex; */
+            position:fixed;
+            left:0;
+            bottom:0;
+            width:100%;
+            z-index:9999;
+            background:#fff;
+        }
+        .footer-btm li{
+            display:inline-block;
+            width: 25%;
+            text-align: center;
+            padding:15px 0;
+            box-sizing:border-box;
+            float:left;
+        }
+        .footer-btm .fa{
+            font-size:2rem;
+        }
+       /*  .footer-btm p{
+            color:#000;
+            font-size:1.2rem;
+            padding:8px;
+        } */
+        .footer-btm .color {
+            color:#10a6e2;
+        }
+        .footer-btm li i{
+            margin-bottom:9px;
+        }
+        .footer-btm li span div{
+            z-index:10000;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <div class="header-top-left">
+                <span>
+                    <i class="fa iconfont icon-shape"></i>
+                    账单
+                </span>
+            </div>
+            <div class="header-top-right">
+                <span class="fa iconfont icon-yonghu"></span>
+                <span class="fa iconfont icon-fangdajing1"></span>
+                <span class="fa iconfont icon-plus"></span>
+            </div>
+        </div>
+        <div class="header-btm">
+            <span class="header-btm-b">
+                <i class="fa iconfont icon-saoyisao"></i>
+                <p>扫一扫</p>
+            </span>
+            <span class="header-btm-b">
+                <i class="fa iconfont icon-fukuan"></i>
+                <p>付款</p>
+            </span>
+            <span class="header-btm-b">
+                <i class="fa iconfont icon-qiaquan"></i>
+                <p>卡券</p>
+            </span>
+            <span class="header-btm-b">
+                <i class="fa iconfont icon-kendeji"></i>
+                <p>咻一咻</p>
+            </span>
+        </div>
+    </header>
+    <section>
+    <ul class="body clearfix">
+        <li>
+            <span>
+                <i class="fa iconfont icon-yuebao" style="color:#f05747"></i>
+                <p>余额宝</p>
+            </span>
+        </li>
+        <li>
+            <span>
+                <i class="fa iconfont icon-12" style="color:#f05747"></i>
+                <p>红包</p>
+            </span>
+        </li>
+        <li>
+            <span>
+                <i class="fa iconfont icon-tianmao" style="color:#f05747"></i>
+                <p>天猫</p>
+            </span>
+        </li>
+        <li>
+            <span>
+                <i class="fa iconfont icon-zhuanzhang" style="color:#009ade"></i>
+                <p>转账</p>
+            </span>
+        </li>
+        <li>
+            <span>
+                <i class="fa iconfont icon-shoujichongzhi-copy" style="color:#009ade"></i>
+                <p>手机充值</p>
+            </span>
+        </li>
+        <li>
+            <span>
+                <i class="fa iconfont icon-zhimaxinyong" style="color:#0db789"></i>
+                <p>芝麻信用</p>
+            </span>
+        </li>
+        <li>
+            <span>
+                <i class="fa iconfont icon-didichuhang" style="color:#f28e11"></i>
+                <p>滴滴出行</p>
+            </span>
+        </li>
+        <li>
+            <span>
+                <i class="fa iconfont icon-taobaodianying" style="color:#f15a4a"></i>
+                <p>淘宝电影</p>
+            </span>
+        </li>
+        <li>
+            <span>
+                <i class="fa iconfont icon-mayijubao" style="color:#009ade"></i>
+                <p>蚂蚁聚宝</p>
+            </span>
+        </li>
+        <li>
+            <span>
+                <i class="fa iconfont icon-yangchengtongchongzhi" style="color:#f15a4a"></i>
+                <p>羊城通充值</p>
+            </span>
+        </li>
+        <li>
+            <span>
+                <i class="fa iconfont icon-world" style="color:#009ade"></i>
+                <p>世界那么大</p>
+            </span>
+        </li>
+        <li>
+            <span>
+                <i class="fa iconfont icon-xinyongqiahuankuan" style="color:#f39826"></i>
+                <p>信用卡还款</p>
+            </span>
+        </li>
+    </ul>
+    </section>
+    <footer>
+        <div class="footer-top">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <!-- <img src="http://img3.imgtn.bdimg.com/it/u=126883970,153182197&fm=23&gp=0.jpg" alt=""> -->
+                        <img src="img/078.jpg" alt="" />
+                    </div>
+                    <div class="swiper-slide">
+                        <!-- <img src="http://img3.imgtn.bdimg.com/it/u=126883970,153182197&fm=23&gp=0.jpg" alt=""> -->
+                        <img src="img/078.jpg" alt="" />
+                    </div>
+                </div>
+                <!-- 如果需要分页器 -->
+                <div class="swiper-pagination"></div>
+
+                <!-- 如果需要导航按钮 -->
+                <!-- <div class="swiper-button-prev"></div> -->
+                <!-- <div class="swiper-button-next"></div> -->
+
+                <!-- 如果需要滚动条 -->
+                <!-- <div class="swiper-scrollbar"></div> -->
+            </div>
+        </div>
+        <script>
+            var mySwiper = new Swiper ('.swiper-container', {
+            // direction: 'vertical',
+            loop: true,
+
+            // 如果需要分页器
+            pagination: '.swiper-pagination',
+            paginationClickable: true,
+            // 如果需要前进后退按钮
+            // nextButton: '.swiper-button-next',
+            // prevButton: '.swiper-button-prev',
+
+            // 如果需要滚动条
+            // scrollbar: '.swiper-scrollbar',
+            autoplay: 1000
+            })
+        </script>
+        <div class="footer-c">
+            <ul class="body clearfix">
+                <li>
+                    <span>
+                        <i class="fa iconfont icon-cf-c79" style="color:#f39926"></i>
+                        <p>收款</p>
+                    </span>
+                </li>
+                <li>
+                    <span>
+                        <i class="fa iconfont icon-huilvhuansuan" style="color:#10a6e2"></i>
+                        <p>汇率换算</p>
+                    </span>
+                </li>
+                <li>
+                    <span>
+                        <i class="fa iconfont icon-caipiao" style="color:#f05040"></i>
+                        <p>彩票</p>
+                    </span>
+                </li>
+                <li>
+                    <span>
+                        <i class="fa iconfont icon-hongbao" style="color:#10a6e2"></i>
+                        <p>红包快手</p>
+                    </span>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-btm">
+            <ul>
+                <li>
+                    <span class="color">
+                        <div>
+                            <i class="fa iconfont icon-zhifubao"></i>
+                            <br/>
+                            支付宝
+                        </div>
+                    </span>
+                </li>
+                <li>
+                    <span>
+                        <div>
+                            <i class="fa iconfont icon-koubei1"></i>
+                            <br/>
+                            口碑
+                        </div>
+                    </span>
+                </li>
+                <li>
+                    <span>
+                        <div>
+                            <i class="fa iconfont icon-pengyou"></i>
+                            <br/>
+                            朋友
+                        </div>
+                    </span>
+                </li>
+                <li>
+                    <span>
+                        <div>
+                            <i class="fa iconfont icon-qian"></i>
+                            <br/>
+                            我的
+                        </div>
+                    </span>
+                </li>
+            </ul>
+            <script>
+                $(".footer-btm li span div i").die().live("click",function(event){
+                     var e=window.event || event;
+                     if(e.stopPropagation){
+                        e.stopPropagation();
+                      }else{
+                        e.cancelBubble = true;
+                     }
+                     //你的代码
+                    touch.on('.footer-btm li span div', 'tap', function(ev) {
+                        if($(this).has(".color")){
+                            console.log(this);
+                            // $(this).addClass('color').parent("li").siblings('li').find("span").removeClass('color');
+                            $(this).parent().addClass('color').parent("li").siblings('li ').find('span').removeClass('color');
+                        }
+                    });
+                });
+
+            </script>
+        </div>
+    </footer>
+
+</body>
+</html>
