@@ -1,0 +1,302 @@
+a {
+  text-decoration: none;
+  color: #999;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+header {
+  width: 100%;
+  height: 50px;
+}
+.con1-1 {
+  width: 100%;
+  height: 50px;
+}
+.swiper-container {
+  width: 100%;
+}
+.img-0 {
+  width: 100%;
+  height: 50px;
+}
+.con1 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  padding-top: 5px;
+  background: #fff;
+  box-shadow: 0px 1px 5px #888888;
+}
+.scan {
+  width: 19%;
+  padding: 5px 5px;
+  float: left;
+}
+.ic {
+  display: block;
+  text-align: center;
+  font-size: 1rem;
+}
+.iconfont {
+  padding: 0.9rem 0.2rem 0.1rem 1.3rem;
+}
+.scan p {
+  font-size: 0.5rem;
+  text-align: center;
+  color: #333;
+  font-weight: 500;
+}
+.center {
+  width: 50%;
+  height: 50px;
+  display: block;
+  float: left;
+}
+.sure {
+  height: 50px;
+  line-height: 50px;
+  margin-left: 30%;
+  font-size: 1.2rem;
+}
+section {
+  width: 100%;
+  height: auto;
+}
+section .top {
+  width: 100%;
+  height: 80px;
+  background: #f9f9f9;
+  clear: both;
+  background-image: url(../dist/img/fo01.png) 10 10 round;
+}
+section .top .top-he {
+  height: 80px;
+}
+section .top .top-he .iconfont {
+  padding: 1.4rem 2rem;
+  font-size: 2.5rem;
+  float: left;
+}
+section .top .top-he .add {
+  font-size: 1.5rem;
+  color: #666;
+  float: left;
+  padding: 1.6rem 0.2rem;
+}
+section .top .shop {
+  width: 100%;
+  height: auto;
+  background: red;
+  float: left;
+}
+.center1 {
+  width: 100%;
+  height: 350px;
+}
+.center1 .con2 {
+  width: 100%;
+  height: 350px;
+}
+.center1 .con2 .song {
+  width: 100%;
+  height: 150px;
+}
+.center1 .con2 .song p {
+  width: 100%;
+  height: 50px;
+  border: 1px solid #eee;
+}
+.center1 .con2 .song p a {
+  padding: 0.3rem 0.2rem 0.2rem 5rem;
+  font-size: 1.1rem;
+  text-align: center;
+  float: left;
+}
+.center1 .con2 .song p .iconfont {
+  float: left;
+  font-size: 1.1rem;
+  text-align: center;
+  padding: 0.8rem 0.1rem 0.3rem 0.1rem;
+}
+.center1 .con2 .song .sp {
+  width: 100%;
+  height: 50px;
+  padding: 0.3rem 0.3rem;
+  text-align: center;
+}
+.center1 .con2 .song .sp .a1 {
+  padding: 0.3rem 0.2rem 0.2rem 5rem;
+  font-size: 1.1rem;
+  text-align: center;
+  float: left;
+}
+.center1 .con2 .song .piao .a2 {
+  padding: 0.8rem 0.2rem 0.2rem 7.5rem;
+}
+.center1 .con2 span {
+  display: block;
+  padding: 0.7rem 0.3rem;
+  font-size: 1.1rem;
+  color: #666;
+  text-align: center;
+  float: left;
+}
+.center1 .con2 .li {
+  width: 100%;
+  height: 100px;
+  margin-top: 45px;
+}
+.center1 .con2 .li .qu {
+  width: 100%;
+  height: 50px;
+}
+.center1 .con2 .li .qu span {
+  font-size: 1.1rem;
+  float: left;
+  display: block;
+  padding: 0.2rem 1.3rem 0.5rem 0.3rem;
+}
+.center1 .con2 .li .qu .iconfont {
+  float: left;
+  padding: 0.4rem 0.15rem 0.3rem 0.1rem;
+}
+.center1 .con2 .li .qu .a3 {
+  float: left;
+  padding: 0.4rem 0.2rem 0.2rem 5.2rem;
+  font-size: 1.1rem;
+}
+.center1 .con2 .li .zhang {
+  width: 100%;
+  height: 50px;
+}
+.center1 .con2 .li .zhang span {
+  font-size: 1.1rem;
+  float: left;
+  display: block;
+  padding: 0.2rem 1.3rem 0.5rem 0.3rem;
+}
+.center1 .con2 .li .zhang .iconfont {
+  float: left;
+  padding: 0.4rem 0.15rem 0.3rem 0.1rem;
+}
+.center1 .con2 .li .zhang .a4 {
+  float: left;
+  padding: 0.3rem 0.2rem 0.2rem 2rem;
+  font-size: 1.1rem;
+}
+.center1 .con2 .total {
+  width: 100%;
+  height: 160px;
+  margin-top: 15px;
+}
+.center1 .con2 .total .heji {
+  width: 100%;
+  height: 40px;
+}
+.center1 .con2 .total .heji span {
+  font-size: 1.1rem;
+  float: left;
+  display: block;
+  padding: 0.2rem 1.3rem 0.5rem 0.3rem;
+}
+.center1 .con2 .total .heji .shang {
+  display: inline-block;
+  float: left;
+  padding: 0.4rem 0.15rem 0.3rem 7.5rem;
+}
+.center1 .con2 .total .heji .money {
+  float: left;
+  padding: 0.3rem 0.2rem 0.2rem 1rem;
+  font-size: 1.1rem;
+}
+.center1 .con2 .total .fei {
+  width: 100%;
+  height: 40px;
+}
+.center1 .con2 .total .fei span {
+  font-size: 1.1rem;
+  float: left;
+  display: block;
+  padding: 0.2rem 1.3rem 0.5rem 0.3rem;
+}
+.center1 .con2 .total .fei .a5 {
+  float: left;
+  padding: 0.3rem 0.2rem 0.2rem 9rem;
+  font-size: 1.1rem;
+}
+.center1 .con2 .total .hui {
+  width: 100%;
+  height: 40px;
+}
+.center1 .con2 .total .hui span {
+  font-size: 1.1rem;
+  float: left;
+  display: block;
+  padding: 0.2rem 1.3rem 0.5rem 0.3rem;
+}
+.center1 .con2 .total .hui .a6 {
+  float: left;
+  padding: 0.3rem 0.2rem 0.2rem 9rem;
+  font-size: 1.1rem;
+}
+.center1 .con2 .total .yi {
+  width: 100%;
+  height: 40px;
+}
+.center1 .con2 .total .yi span {
+  font-size: 1.1rem;
+  float: left;
+  display: block;
+  padding: 0.2rem 1.3rem 0.5rem 0.3rem;
+}
+.center1 .con2 .total .yi .a7 {
+  float: left;
+  padding: 0.3rem 0.2rem 0.2rem 10rem;
+  font-size: 1.1rem;
+}
+footer .footer {
+  width: 100%;
+  height: auto;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background: #fff;
+  box-shadow: 0px -2px 5px #888888;
+}
+footer .pay {
+  width: 55%;
+  height: auto;
+  float: left;
+  text-align: center;
+  padding: 1.5rem 0.2rem 1rem 0.5rem;
+}
+footer .pay .pay-mo {
+  float: left;
+  font-size: 1.1rem;
+}
+footer .pay .mon {
+  display: block;
+  float: left;
+  font-size: 1.1rem;
+}
+footer .ti {
+  width: 30%;
+  height: auto;
+  float: right;
+  text-align: center;
+  padding: 0 0 0 1.2rem;
+  background: #dd2724;
+}
+footer .ti .ti-dan {
+  color: #fff;
+  font-size: 1.1rem;
+  padding: 1.6rem 0.5rem 1.5rem 0.5rem;
+}
+.footer-1 {
+  width: 100%;
+  height: 180px;
+}
