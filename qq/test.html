@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title></title>
+		<script src="dist/js/swiper.animate1.0.2.min.js"></script>
+		<style>
+			*{
+				margin:0;
+				padding:0;
+			}
+			.music {
+			    width: 2rem;
+			    height: 2rem;
+			    position: absolute;
+			    right: .5rem;
+			    top: .5rem;
+			    z-index: 100;
+			    }
+			    audio:not([controls]) {
+			    display: none;
+			}
+			/*user agent stylesheet
+			audio {
+			    width: 300px;
+			    height: 30px;
+			}*/
+			.music .control {
+			    width: 2.5rem;
+			    height: 2.5rem;
+			    background: url(http://oss.szzbmy.com/rp2/apps/static/widget/music/music_c0fda01.gif) transparent no-repeat center center;
+			    background-size: contain;
+			}
+			.music .control .control-after {
+			    width: 1.5rem;
+			    height: 1.5rem;
+			    position: absolute;
+			    top: 50%;
+			    left: 50%;
+			    margin-top: -.75rem;
+			    margin-left: -.75rem;
+			    background: url(http://oss.szzbmy.com/rp2/apps/static/widget/music/music_off_8d94020.png) transparent no-repeat center center;
+			    background-size: 100% 100%;
+			    -webkit-animation: rotate2d 1.2s linear infinite;
+			    animation: rotate2d 1.2s linear infinite;
+			    z-index: -1;
+			}
+
+		</style>
+		<link rel="stylesheet" href="http://cdn.bootcss.com/animate.css/3.5.2/animate.css" />
+	</head>
+	<body>
+		<div id="music" class="music">	
+			<audio id="music-audio" class="audio" loop="" autoplay="autoplay" preload="">		
+				<source src="http://lxcdn.rabbitpre.com/07917e0b-f3ea-4756-ba9f-c9ec934dc887">	
+			</audio>		
+			<div class="control">
+				<div class="control-after"></div>
+			</div>	
+		</div>
+	</body>
+</html>
