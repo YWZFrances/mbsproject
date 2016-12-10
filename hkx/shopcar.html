@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>Document</title>
+	<link rel="stylesheet" href="/dist/css/index.css">
+	<script src="dist/js/template.js"></script>
+	<script src="dist/js/zepto.js"></script>
+</head>
+<body>
+	<div id="content"></div>
+
+	<script id="goodtpl" type="text/html">
+		<h1>{{title}}</h1>
+		<div class="wrap">
+		    {{each list as value i}}
+				<ul class="carlist">
+		        	<li><img src="{{value['good_url']}}" alt=""></li>
+		        	<li>物品名称： <span>{{value['good_name']}}</span></li>
+		        	<li>物品价格： <span style="color:red">{{value['good_price']}}</span></li>
+		        	<li><a class="del" data-id={{value['good_id']}}>删除</a></li>
+				</ul>
+		    {{/each}}
+		</div>
+	</script>
+
+	<script src="dist/js/shopcar.js"></script>
+</body>
+</html>
+
+
+

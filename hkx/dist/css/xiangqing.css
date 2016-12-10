@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+}
+img {
+  border: none;
+}
+ul li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+input:focus {
+  outline: none;
+}
+header {
+  padding: 10px 10px 40px 10px ;
+  background: #fff;
+}
+header .iconfont {
+  font-size: 3rem;
+}
+header .sj {
+  float: right;
+  margin-right: 20px;
+}
+header .zuo {
+  float: left;
+}
+header .you {
+  float: right;
+}
+.yifuming {
+  width: 100%;
+  background: white;
+  clear: both;
+}
+.yifuming li {
+  float: left;
+}
+.yifuming li:nth-child(1) .yifu {
+  width: 450px;
+  height: 330px;
+  display: block;
+}
+.yifuming li:nth-child(2) {
+  background: red;
+  width: 10%;
+  text-align: center;
+  border-radius: 20px;
+  color: white;
+  margin: 20px 0;
+}
+.yifuming li:nth-child(3) {
+  width: 73%;
+  margin: 10px 0;
+  border-right: 1px solid #ddd;
+  font-size: 1.5rem;
+}
+.yifuming li:nth-child(4) {
+  width: 15%;
+  text-align: center;
+  margin: 10px 0;
+}
+.yifuming li:nth-child(5) img {
+  width: 100%;
+}
+.yifuxia2 {
+  width: 100%;
+}
+.jiage {
+  width: 100%;
+  color: red;
+  text-indent: 20px;
+  padding: 10px 0;
+  border-top: 1px solid #ddd;
+  font-size: 1.5rem;
+}
+.jiage .dazhe {
+  text-decoration: line-through;
+  color: #3C3C3C;
+  font-size: 1rem;
+}
+.kuanshi {
+  width: 100%;
+  clear: both;
+  text-indent: 20px;
+  padding: 10px 0;
+  border-top: 1px solid #ddd;
+  font-size: 1rem;
+}
+footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  background: #eee;
+}
+.footerul li {
+  float: left;
+  text-align: center;
+}
+.footerul li:nth-child(1) {
+  width: 16%;
+  color: #3C3C3C;
+  padding: 20px 0;
+}
+.footerul li:nth-child(2) {
+  width: 16%;
+  color: #3C3C3C;
+  padding: 20px 0;
+}
+.footerul li:nth-child(3) {
+  width: 16%;
+  color: #3C3C3C;
+  padding: 20px 0;
+}
+.footerul li:nth-child(4) {
+  width: 26%;
+  background: red;
+  color: white;
+  padding: 20px 0;
+}
+.footerul li:nth-child(5) {
+  width: 26%;
+  background: black;
+  color: white;
+  padding: 20px 0;
+}

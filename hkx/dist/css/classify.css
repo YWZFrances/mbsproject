@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style-type: none;
+}
+html {
+  font-size: 62.5%;
+}
+.clearfix:after {
+  content: '';
+  width: 100%;
+  clear: both;
+  display: block;
+}
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 9999;
+  background: #fff;
+}
+footer li {
+  display: inline-block;
+  width: 25%;
+  text-align: center;
+  padding: 15px 0;
+  box-sizing: border-box;
+  float: left;
+}
+footer li a {
+  color: #000;
+  text-decoration: none;
+}
+footer .fa {
+  font-size: 2rem;
+}
+footer li i {
+  margin-bottom: 9px;
+}
+footer .color {
+  color: red;
+}
+footer .hide {
+  display: none;
+}
+header {
+  margin-top: 5px;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  margin-left: 10px;
+}
+header .iconfont {
+  font-size: 2rem;
+}
+header .search {
+  display: block;
+  width: 94%;
+  height: 3rem;
+  border-radius: 3px;
+  text-indent: 50px;
+  border: 1px solid #ddd;
+}
+header .be {
+  position: absolute;
+  left: 20px;
+  top: 8px;
+}
+header .af {
+  position: absolute;
+  right: 50px;
+  top: 7px;
+}
+section {
+  display: flex;
+  margin-top: 50px;
+  color: #555;
+}
+section .section-left {
+  position: fixed;
+  left: 0;
+  top: 50px;
+  flex: 1;
+}
+section .section-left .iconfont {
+  font-size: 2.5rem;
+}
+section .section-left .iconfont p {
+  font-size: 1rem;
+}
+section .section-left li {
+  padding: 10px;
+  font-size: 2rem;
+  border-top: 1px solid #ddd;
+  text-align: center;
+  background-color: #eaeaea;
+}
+section .section-left .style {
+  border-bottom: 1px solid #ddd;
+}
+section .section-left .selected {
+  background: #fff;
+}
+section .section-left .hide {
+  display: none;
+}
+section .section-right {
+  margin-left: 20%;
+  flex: 4;
+  padding: 5px;
+  width: 100%;
+}
+section .section-right h2 {
+  height: 33px;
+  line-height: 44px;
+  font-size: 2rem;
+  color: #959595;
+}
+section .section-right img {
+  display: block;
+  width: 100%;
+}
+section .section-right .deta ul li {
+  display: block;
+  float: left;
+  width: 33%;
+  text-align: center;
+}
+section .section-right .deta img {
+  width: 100%;
+}

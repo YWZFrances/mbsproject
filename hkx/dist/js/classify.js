@@ -1,0 +1,1 @@
+var $tab_li=$(".section-left li");$(".section-left li").click(function(){$(this).addClass("selected").siblings().removeClass("selected");var i=$tab_li.index(this);$("div.deta ").eq(i).show().siblings().hide()}),$("footer li a").click(function(){console.log(this),$(this).addClass("color").parents().siblings().find("a").removeClass("color")});

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>购物车</title>
+    <link rel="stylesheet" type="text/css" href="dist/css/shopCart.css">
+    <link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_hma1ov1kb6b6gvi.css">
+    <script src="dist/js/template.js"></script>
+    <script src="dist/js/zepto.js"></script>
+    <script src="dist/js/jquery-1.11.3.js"></script>
+</head>
+<body>
+    <header>
+        <a href="list.html" style="color:#000;text-decoration: none;"><div class="fh iconfont icon-fanhui"></div></a>
+        <h2>
+            购物车
+        </h2>
+    </header>
+    <section>
+        <div class="title1 clearfix">
+            <span class="all">
+                <i class="iconfont icon-xuankuang"></i>
+                <a href="##">梦芭莎</a>
+            </span>
+            <span class="bianji">
+                <a href="##">编辑</a>
+            </span>
+        </div>
+        <div class="main">
+            <div class="ps">
+                该商品由梦芭莎为您配送
+            </div>
+            <div id="content"></div>
+            <script id="goodtpl" type="text/html">
+                 <div class="wrap">
+                    {{each list as value i}}
+                        <ul class="carlist clearfix">
+                            <li class="img"><img src="{{value['good_url']}}" alt=""></li>
+                            <div class="ri">
+                                <li><span>{{value['good_name']}}</span></li>
+                                <li><span style="color:red">{{value['good_price']}}</span></li>
+                                <li><a class="del" data-id={{value['good_id']}}>删除</a></li>
+                            </div>
+                        </ul>
+                    {{/each}}
+                </div>
+            </script>
+        </div>
+        <div class="jiesuan">
+            <span class="allset">
+                <i class="iconfont icon-xuankuang"></i>
+                <span>全选</span>
+            </span>
+            <span class="total" id="total">
+                合计：<span></span>
+            </span>
+            <button>
+                去结算（<span></span>）
+            </button>
+        </div>
+    </section>
+    <footer>
+        <ul>
+            <li>
+                <a href="#">
+                    <i class="fa iconfont icon-zhuye"></i>
+                    <br/>
+                    梦芭莎
+                </a>
+            </li>
+            <li>
+                <a href="classify.html">
+                    <i class="fa iconfont icon-fenlei"></i>
+                    <br/>
+                    分类
+                </a>
+            </li>
+            <li>
+                <a href="shopCart.html" class="color">
+                    <i class="fa iconfont icon-gouwuche"></i>
+                    <br/>
+                    购物车
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa iconfont icon-wode"></i>
+                    <br/>
+                    我的
+                </a>
+            </li>
+        </ul>
+    </footer>
+    <script src="dist/js/shopCart.js"></script>
+
+</body>
+</html>
